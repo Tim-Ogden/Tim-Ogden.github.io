@@ -54,14 +54,32 @@
 			}
 
 			#classroom {
-  			width: 1px;
+  			width: 100px;
 			}
 
 			#btns{
 				font-family: "Source Sans Pro";
 			}
 
-				
+			input[type="checkbox"] {
+  /* Make the checkbox visible */
+			  appearance: auto;
+			  -webkit-appearance: auto;
+			  -moz-appearance: auto;
+
+			  /* Customize the checkbox styles */
+			  width: 16px; /* Adjust the size as needed */
+			  height: 16px;
+			  border: 1px solid #ccc; /* Add a border */
+			  border-radius: 4px; /* Add rounded corners */
+			  outline: none; /* Remove the default outline */
+			  cursor: pointer; /* Change the cursor to a pointer on hover */
+			}
+				input[type="checkbox"]:checked {
+				  background-color: #007bff; /* Change the background color when checked */
+				  border-color: #007bff; /* Change the border color when checked */
+				}
+
 
 
 		</style>
@@ -118,11 +136,15 @@
 							<div class="col-8 col-12-narrower">
 
 								<!-- Content -->
+								<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1"> I have a bike</label><br>
+<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+<label for="vehicle2"> I have a car</label><br>
+<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+<label for="vehicle3"> I have a boat</label><br>
 									<article id="content">
 										<header>
 											<h2> Course List</h2>
-											<p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit
-											dolor neque semper magna lorem ipsum.</p>
 										</header>
 										<div>
 											<div>
