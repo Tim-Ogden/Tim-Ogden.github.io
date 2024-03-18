@@ -147,7 +147,7 @@ window.onload = function() {
         table.appendChild(tbody);
       }
 
-      function filterData(query, data){
+      function filterTerm(query, data){
         result = []
         if (query === "spring"){
           data.forEach(row => {
@@ -183,7 +183,7 @@ window.onload = function() {
     const a_button = document.getElementById('all-btn');
 
     s_button.addEventListener('click', function() {
-        s_data = filterData("spring",parsedData)
+        s_data = filterTerm("spring",parsedData)
         s_data = p_data_to_t_data(s_data)
 
         table = document.getElementById('csvTable_body');
@@ -193,7 +193,7 @@ window.onload = function() {
       });
 
     f_button.addEventListener('click', function() {
-        f_data = filterData("fall",parsedData)
+        f_data = filterTerm("fall",parsedData)
         f_data = p_data_to_t_data(f_data)
 
         table = document.getElementById('csvTable_body');
